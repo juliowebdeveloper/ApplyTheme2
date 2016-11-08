@@ -6,5 +6,8 @@
     <color name="colorControlHighlight">#3578d6</color>
     <color name="colorButtonNormal">#60ff40</color>
     <color name="colorControlActivated">#8940ff</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_500">#9E9E9E</color>
+
 
 </resources>
