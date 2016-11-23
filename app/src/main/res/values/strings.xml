@@ -3,4 +3,8 @@
     <string name="thumbnail">thumbnail</string>
     <string name="title">title</string>
     <string name="subtitle">subtitle</string>
+
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>

@@ -8,6 +8,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +26,7 @@ MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +47,13 @@ MainActivity extends AppCompatActivity {
         setUpRecyclerView();
     }
 
+     private void setUpToolbar(){
 
+     }
 
+    private void setUpDrawer(){
 
+    }
 
     public void onClick(View v) {
         Snackbar.make(v, "teste", Snackbar.LENGTH_LONG).show();

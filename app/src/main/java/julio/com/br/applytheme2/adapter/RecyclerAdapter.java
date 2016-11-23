@@ -21,6 +21,8 @@ import julio.com.br.applytheme2.model.Landscape;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
 
+        private static final int PRIME_ROW = 0;
+        private static final int NON_PRIME_ROW = 1;
 
 
         public List<Landscape> landscapeList;
@@ -47,6 +49,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     @Override
     public int getItemCount() {
         return landscapeList.size();
+    }
+
+
+    public int getItemViewType(int position){
+        Landscape landscape = landscapeList.get(position);
+        if(landscape.isPrime()){
+            return PRIME_ROW;
+        }else{
+            return NON_PRIME_ROW;
+        }
     }
 
     @Override
