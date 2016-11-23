@@ -2,6 +2,7 @@ package julio.com.br.applytheme2;
 
 import android.os.Build;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -35,24 +36,26 @@ MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        /**********Toolbar  Standalone*************************/
-        toolbar.setTitle("Welcome");
-        toolbar.setSubtitle("Folks");
-        toolbar.inflateMenu(R.menu.menu_main);
-        //Method Reference Java 8
-        toolbar.setOnClickListener(this::onClick);
+
         setUpOptionsMenu();
 
-
+        setUpToolbar();
+        setUpDrawer();
         setUpRecyclerView();
     }
 
      private void setUpToolbar(){
-
+         /**********Toolbar  Standalone*************************/
+         toolbar.setTitle("Nav Drawer Demo");
+         toolbar.inflateMenu(R.menu.menu_main);
+         //Method Reference Java 8
+         toolbar.setOnClickListener(this::onClick);
      }
 
     private void setUpDrawer(){
-
+        NavigationDrawerFragment drawerFragment = (NavigationDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.nav_drwr_fragment);
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawerFragment.setUpDrawer(R.id.nav_drwr_fragment, drawerLayout, toolbar);
     }
 
     public void onClick(View v) {

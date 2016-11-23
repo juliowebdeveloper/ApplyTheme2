@@ -6,8 +6,55 @@
     <color name="colorControlHighlight">#3578d6</color>
     <color name="colorButtonNormal">#60ff40</color>
     <color name="colorControlActivated">#8940ff</color>
-    <color name="grey_700">#616161</color>
+
+
+    <!-- 500 - For Primary color -->
+    <color name="red_500">#f44336</color>
+    <color name="pink_500">#e91e63</color>
+
+
     <color name="grey_500">#9E9E9E</color>
+
+    <!-- 700 - For Toolbar/Primary Dark Color -->
+    <color name="red_700">#d32f2f</color>
+    <color name="pink_700">#c2185b</color>
+    <color name="pink_800">#ad1457</color>
+
+
+    <color name="grey_700">#616161</color>
+
+
+    <!--  800 - Primary Dark Color -->
+    <color name="red_800">#c62828</color>
+
+
+    <!-- Axxx- For Accent Color - Primary action button, Floating Action Buttons, Switches, accent web links-->
+    <color name="red_A100">#ff8a80</color>
+    <color name="red_A200">#ff5252</color>
+    <color name="red_A400">#ff1744</color>
+    <color name="red_A700">#d50000</color>
+
+
+
+
+    <!-- LIGHT BACKGROUNDS: Dark text (#000000)     Opacity
+         Primary text                               87%
+        Secondary text                              54%
+        Disabled text, hint text, and icons         38%
+        Dividers                                    12%
+
+         -->
+
+    <!--DARK BACKGROUNDS: Light text (#FFFFFF)   Opacity
+                          Primary text            100%
+                          Secondary text          70%
+            Disabled text, hint text, and icons   50%
+                           Dividers               12%
+
+
+    -->
+
+
 
 
 </resources>
